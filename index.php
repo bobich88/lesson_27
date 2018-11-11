@@ -2,9 +2,13 @@
 
 require_once 'User.php';
 
-$user = new User('Vasia', 2);
+// $user = new User('Vasia', 2);
 // $user->role = 888;
 // $user->name = 'Artem';
 
 
-var_dump($user->getRole());
+// var_dump($user->getRole());
+
+$rolesUsers = User::$roles;
+
+var_dump($rolesUsers);
